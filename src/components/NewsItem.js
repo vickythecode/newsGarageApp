@@ -12,7 +12,7 @@ const NewsItem=(props)=>{
           {source}
           </span>
           </div>
-          <img src={!imageUrl?"no img.jpg":imageUrl} className="card-img-top" alt="..." />
+          <img src={!imageUrl?"no img.jpg":imageUrl} className="card-img-top" alt="..." style={{maxHeight:"30vh",objectFit:"cover"}} />
             <div className="card-body">
               <h5 className="card-title">{title}....</h5>
               <p className="card-text">{desc}</p>
